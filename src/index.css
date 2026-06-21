@@ -1,0 +1,284 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-gray-50 text-dark-text;
+  }
+
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  .screen-container {
+    @apply min-h-screen bg-white pb-20;
+  }
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
+
+/* ── Page slide transitions ────────────────────────────────────────────────── */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 250ms ease-out both;
+}
+
+.slide-in-left {
+  animation: slideInLeft 250ms ease-out both;
+}
+
+/* ── Shimmer skeleton ──────────────────────────────────────────────────────── */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-card {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 12px;
+}
+
+/* ── AI thinking dots ──────────────────────────────────────────────────────── */
+@keyframes bounceDot {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.thinking-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  height: 24px;
+}
+
+.thinking-dots span {
+  font-size: 28px;
+  line-height: 0;
+  color: rgba(255, 255, 255, 0.9);
+  animation: bounceDot 1s infinite ease-in-out;
+}
+
+.thinking-dots span:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.thinking-dots span:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.thinking-dots span:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* ── Pulse ring for FROM marker ────────────────────────────────────────────── */
+@keyframes pulseRing {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+.marker-pulse-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid #16A34A;
+  animation: pulseRing 1.8s ease-out infinite;
+}
+
+/* ── Map route draw animation ──────────────────────────────────────────────── */
+@keyframes routeDraw {
+  from {
+    stroke-dashoffset: 1200;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.route-path {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: routeDraw 1.5s ease-out forwards;
+}
+
+/* ── Journey step stagger ──────────────────────────────────────────────────── */
+@keyframes stepReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-card {
+  animation: stepReveal 300ms ease-out both;
+}
+
+/* ── Bottom nav tab bounce ─────────────────────────────────────────────────── */
+@keyframes tabBounce {
+  0% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tab-active-bounce {
+  animation: tabBounce 200ms ease-out;
+}
+
+/* ── Button tap effect ─────────────────────────────────────────────────────── */
+.btn-tap {
+  transition: transform 100ms ease;
+}
+
+.btn-tap:active {
+  transform: scale(0.97);
+}
+
+/* ── Route card hover ──────────────────────────────────────────────────────── */
+.route-card {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.route-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.route-card:active {
+  transform: scale(0.98);
+  transition: transform 100ms ease;
+}
+
+/* ── Route card selected gradient border ───────────────────────────────────── */
+.route-card-selected {
+  background: linear-gradient(rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.98)) padding-box,
+    linear-gradient(135deg, #3B82F6, #7C3AED) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.25);
+}
+
+/* ── Glassmorphism AI card ─────────────────────────────────────────────────── */
+.glass-card {
+  background: rgba(67, 56, 202, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+}
+
+/* ── Map gradient overlay ──────────────────────────────────────────────────── */
+.map-fade-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, rgba(15, 23, 42, 0.45));
+  pointer-events: none;
+  z-index: 400;
+}
+
+/* ── Savings card glow ─────────────────────────────────────────────────────── */
+.savings-card {
+  background: linear-gradient(135deg, #16A34A, #15803D);
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.3);
+}
+
+/* ── Price lock pulse border ───────────────────────────────────────────────── */
+@keyframes lockPulse {
+
+  0%,
+  100% {
+    border-color: #16A34A;
+  }
+
+  50% {
+    border-color: rgba(22, 163, 74, 0.4);
+  }
+}
+
+.price-lock-bar {
+  border-left: 3px solid #16A34A;
+  animation: lockPulse 1.5s ease-in-out infinite;
+}
