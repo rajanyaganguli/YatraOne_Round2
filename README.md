@@ -1,6 +1,6 @@
 # 🚆 YatraOne – One Journey. Every Mode. Zero Hassle.
 
-### 🏆 Team NEURONIX | Reimagining Urban Mobility & Daily Commute in India 2026
+### 🏆 Team NEURONIX | Bharat Academix CodeQuest 2026
 
 <p align="center">
   <a href="https://yatra-one-round2.vercel.app/"><strong>🌐 Live Demo</strong></a> •
