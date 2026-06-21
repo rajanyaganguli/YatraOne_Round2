@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://yatra-one-round2.vercel.app/"><strong>🌐 Live Demo</strong></a> •
   <a href="https://drive.google.com/drive/folders/1U17IssGANzbxpF7cqhv8fNj5TmK0YNF5?usp=drive_link"><strong>🎥 Demo Video</strong></a> •
-  <a href="https://github.com/ashish-4169/YatraOne-Round2"><strong>💻 Repository</strong></a>
+  <a href="https://github.com/rajanyaganguli/YatraOne_Round2"><strong>💻 Repository</strong></a>
 </p>
 
 ---
