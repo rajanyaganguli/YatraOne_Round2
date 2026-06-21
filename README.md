@@ -1,100 +1,193 @@
-# 🚆 YatraOne – Smart Multi-Modal Journey Planner
+# 🚆 YatraOne – One Journey. Every Mode. Zero Hassle.
 
-### Team NEURONIX | Reimagining Urban Mobility & Daily Commute in India 2026
+### 🏆 Team NEURONIX | Reimagining Urban Mobility & Daily Commute in India 2026
 
 <p align="center">
   <a href="https://yatra-one-round2.vercel.app/"><strong>🌐 Live Demo</strong></a> •
   <a href="https://drive.google.com/drive/folders/1U17IssGANzbxpF7cqhv8fNj5TmK0YNF5?usp=drive_link"><strong>🎥 Demo Video</strong></a> •
-  <a href="https://github.com/rajanyaganguli/YatraOne_Round2"><strong>💻 Repository</strong></a>
+  <a href="https://github.com/rajanyaganguli/YatraOne_Round2"><strong>💻 GitHub Repository</strong></a>
 </p>
 
 ---
 
-## 📌 Problem Statement
+## 🌟 Vision
 
-**Smart Multi-Modal Journey Planner:** Build an intelligent system that plans and books the best combined journeys using Metro, Bus, Train, and last-mile transport.
+Urban commuters in India often juggle multiple apps to complete a single journey—one for metro schedules, another for buses, another for maps, and yet another for last-mile transport.
 
-YatraOne is an AI-powered multi-modal journey planning platform designed to simplify public transportation for Indian commuters. Instead of switching between multiple applications for metro, buses, trains, and last-mile transport, YatraOne brings everything together into one intelligent experience.
+**YatraOne** reimagines this experience by bringing every mode of travel into a single intelligent platform.
 
-Users can discover the best route based on speed, affordability, safety, sustainability, and convenience.
-
----
-
-## ✨ Features
-
-- 🗺️ Smart location search with autocomplete
-- 🚍 Multi-modal route planning (Metro, Bus, Train, Last-mile)
-- ⚡ Preference-based route ranking
-- 🤖 AI Insight recommendations
-- 📍 Interactive maps powered by OpenStreetMap + OSRM
-- 🚉 Step-by-step journey breakdown
-- 💳 Unified booking experience (MVP simulation)
-- 🛡️ Women Safety features with SOS access
-- 🌱 Carbon Dashboard and Green Points rewards
-- 📱 Responsive and modern UI inspired by Uber + Google Maps
+Whether you're a student rushing to class, a professional commuting to work, or a traveler navigating a new city, YatraOne helps you discover the most efficient, affordable, safe, and sustainable route in seconds.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚦 The Challenge
 
-### Frontend
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
+### Smart Multi-Modal Journey Planner
 
-### Maps & Routing
-- OpenStreetMap
-- Nominatim API
-- OSRM
-- Leaflet
+Design an intelligent system capable of planning and booking journeys across:
 
-### Deployment
-- Vercel
+* 🚇 Metro
+* 🚌 Bus
+* 🚆 Train
+* 🚕 Last-Mile Transport
 
-### Version Control
-- Git & GitHub
+while optimizing for:
+
+* Time
+* Cost
+* Safety
+* Convenience
+* Environmental Impact
 
 ---
 
-## 🏗️ System Workflow
+## 💡 Our Solution
+
+YatraOne acts as a unified mobility assistant that analyzes multiple transportation options and recommends the best journey based on user preferences.
+
+Instead of planning transport mode by mode, users receive a complete end-to-end travel plan with route guidance, safety insights, booking support, and sustainability metrics.
+
+---
+
+## ✨ Key Features
+
+### 🗺️ Intelligent Journey Planning
+
+* Smart location search with autocomplete
+* Multi-modal route discovery
+* Dynamic route ranking
+* Personalized travel recommendations
+
+### 📍 Interactive Navigation
+
+* OpenStreetMap-powered route visualization
+* Turn-by-turn journey breakdown
+* Route comparison and optimization
+
+### 🤖 AI-Powered Assistance
+
+* Intelligent route insights
+* Smart travel recommendations
+* Convenience-focused decision support
+
+### 🛡️ Safety First
+
+* Women safety dashboard
+* SOS access
+* Safety-oriented travel insights
+
+### 🌱 Sustainable Mobility
+
+* Carbon footprint estimation
+* Green Points reward system
+* Eco-friendly route awareness
+
+### 💳 Unified Booking Experience
+
+* Seamless booking simulation
+* Single-flow travel planning experience
+
+---
+
+## 🔄 User Journey
 
 ```text
-Home
- ↓
-Search Journey
- ↓
-Results & Route Ranking
- ↓
-Journey Details
- ↓
-Booking
- ↓
-Safety Features
- ↓
-Carbon Dashboard
+🏠 Home
+      ↓
+🔍 Search Journey
+      ↓
+📊 Route Comparison & Ranking
+      ↓
+🗺️ Detailed Route View
+      ↓
+🎟️ Booking
+      ↓
+🛡️ Safety Support
+      ↓
+🌱 Carbon Dashboard
 ```
 
 ---
 
-## 🚀 Future Scope
+## 🏗️ Tech Stack
 
-- Live GTFS integration
-- Railway APIs
-- Real-time transit feeds
-- Payment gateway integration
-- Predictive ETA models
-- Multi-city expansion across India
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+
+### Mapping & Routing
+
+* OpenStreetMap
+* Nominatim API
+* OSRM
+* Leaflet
+
+### Deployment
+
+* Vercel
+
+### Version Control
+
+* Git & GitHub
+
+---
+
+## ⚙️ Architecture Overview
+
+```text
+User Input
+     ↓
+Location Search
+     ↓
+Route Generation
+     ↓
+Multi-Modal Analysis
+     ↓
+Preference-Based Ranking
+     ↓
+Journey Recommendation
+     ↓
+Booking + Safety + Sustainability Modules
+```
+
+---
+
+## 🚀 Future Roadmap
+
+YatraOne is currently built as an MVP and can be extended with:
+
+* Real-time GTFS transit integration
+* Railway API integration
+* Live bus and metro tracking
+* Digital payment gateway support
+* AI-powered ETA prediction
+* Crowd-density estimation
+* Personalized commute recommendations
+* Pan-India multi-city deployment
+
+---
+
+## 📈 Impact
+
+YatraOne aims to solve one of the biggest challenges in Indian urban mobility: fragmentation.
+
+By combining planning, navigation, booking, safety, and sustainability into one platform, commuters can make faster, safer, greener, and more informed travel decisions.
 
 ---
 
 ## 👥 Team NEURONIX
 
-- Rajanya Ganguli
-- Ashish Kumar
+* **Rajanya Ganguli**
+* **Ashish Kumar**
 
 ---
 
-## 🏆 Built as a 48-Hour MVP
+## 🏆 Built in 48 Hours
 
-YatraOne demonstrates how fragmented transport systems can be unified into a single intelligent platform that makes public transport smarter, safer, and more rewarding for every Indian commuter.
+Created as a hackathon MVP to demonstrate how intelligent multi-modal transportation can transform the daily commute experience for millions of Indian travelers.
+
+**One Journey. Every Mode. Zero Hassle.**
+
